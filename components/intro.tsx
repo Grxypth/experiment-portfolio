@@ -26,7 +26,7 @@ export default function Intro() {
             Hi, I'm <span className="text-[#5651e5]">İhsan</span>
           </h1>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold py-2 text-gray-700">
-            A Full-Stack Web Developer
+            A Full-Stack Software Engineer
           </h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             I’m focused on building responsive front-end web applications
@@ -73,7 +73,7 @@ export default function Intro() {
 
           <a
             className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://github.com"
+            href="https://github.com/Grxypth"
             target="_blank"
           >
             <FaGithubSquare />

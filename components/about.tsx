@@ -24,10 +24,10 @@ export default function About() {
         <p className="mb-3">
           {t("graduate")} <span className="font-medium">{t("degree")}</span>
           {t("passion")} <span className="font-medium">{t("certificate")}</span>
-          . <span className="italic">{t("programming")}</span> {t("enjoy")}
+          <span className="italic">{t("programming")}</span> {t("enjoy")}
           <span className="underline">{t("love")}</span> {t("wlove")}{" "}
           <span className="font-medium">
-            React, Next.js, Golang, and SQLite
+            React, Next.js, Golang, and SQLite.
           </span>
           {t("looking")} <span className="font-medium">{t("position")}</span>
         </p>

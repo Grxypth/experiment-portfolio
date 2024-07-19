@@ -9,9 +9,11 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useTranslations } from "next-intl";
+/*const t = useTranslations();*/
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("homeLink", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
@@ -46,7 +48,7 @@ export default function Intro() {
             href="#contact"
             className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
             onClick={() => {
-              setActiveSection("Contact");
+              setActiveSection("contactLink");
               setTimeOfLastClick(Date.now());
             }}
           >

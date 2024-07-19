@@ -6,11 +6,7 @@ import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import {
-  useMessages,
-  NextIntlClientProvider,
-  useTranslations,
-} from "next-intl";
+import { useTranslations } from "next-intl";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =

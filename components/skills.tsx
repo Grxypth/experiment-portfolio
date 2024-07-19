@@ -14,6 +14,7 @@ import Git from "@/public/skills/git.png";
 import Golang from "@/public/skills/go.png";
 import NextJS from "@/public/skills/nextjs.png";
 import Vercel from "@/public/skills/vercel.png";
+import { useTranslations } from "next-intl";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -30,14 +31,15 @@ const fadeInAnimationVariants = {
 };
 
 export default function Skills() {
-  const { ref } = useSectionInView("Skills");
+  const { ref } = useSectionInView("skillsLink");
+  const t = useTranslations();
   return (
     <section
       id="skills"
       ref={ref}
       className="w-full h-screen flex flex-col justify-center items-center text-center mb-28 sm:mb-40"
     >
-      <SectionHeading>My skills</SectionHeading>
+      <SectionHeading>{t("skills")}</SectionHeading>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
           <div className="grid grid-cols-2 gap-4 justify-center items-center">

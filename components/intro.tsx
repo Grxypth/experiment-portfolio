@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -9,10 +8,12 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useTranslations } from "next-intl";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("homeLink", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const t = useTranslations();
 
   return (
     <div className="w-full h-screen text-center" ref={ref} id="home">
@@ -23,15 +24,13 @@ export default function Intro() {
       >
         <div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold py-4 text-gray-700">
-            Hi, I'm <span className="text-[#ff9e2f]">İhsan</span>
+            {t("greet")}
+            <span className="text-[#ff9e2f]">İhsan</span>
           </h1>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold py-2 text-gray-700">
-            A Full-Stack Software Engineer
+            {t("job")}
           </h1>
-          <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-            I’m focused on building responsive front-end web applications
-            integrating back-end technologies.
-          </p>
+          <p className="py-4 text-gray-600 max-w-[70%] m-auto">{t("title")}</p>
         </div>
 
         <motion.div
@@ -46,11 +45,11 @@ export default function Intro() {
             href="#contact"
             className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
             onClick={() => {
-              setActiveSection("Contact");
+              setActiveSection("contactLink");
               setTimeOfLastClick(Date.now());
             }}
           >
-            Contact me here{" "}
+            {t("contactButton")}{" "}
             <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
           </Link>
 
@@ -59,7 +58,7 @@ export default function Intro() {
             href="/CV_ENG.pdf"
             download
           >
-            Download CV{" "}
+            {t("downloadButton")}{" "}
             <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
           </a>
 

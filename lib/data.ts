@@ -5,85 +5,27 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import{useTranslations} from "next-intl";
+
 
 export const links = [
   {
-    name: "Home",
+    name: "homeLink",
     hash: "#home",
   },
   {
-    name: "About",
+    name: "aboutLink",
     hash: "#about",
   },
   {
-    name: "Skills",
+    name: "skillsLink",
     hash: "#skills",
   },
-  /*{
-    name: "Projects",
-    hash: "#projects",
-  },
-  */
-  /*{
-    name: "Experience",
-    hash: "#experience",
-  },
-  */
   {
-    name: "Contact",
+    name: "contactLink",
     hash: "#contact",
   },
   
 ] as const;
 
-export const experiencesData = [
-  {
-    title: "",
-    location: "",
-    description:
-      "",
-    icon: React.createElement(LuGraduationCap),
-    date: "",
-  },
-  {
-    title: "",
-    location: "",
-    description:
-      "",
-    icon: React.createElement(CgWorkAlt),
-    date: "",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "",
-    icon: React.createElement(FaReact),
-    date: "",
-  },
-] as const;
-
-export const projectsData = [
-  {
-    title: "",
-    description:
-      "",
-    tags: [""],
-    imageUrl: corpcommentImg,
-  },
-  {
-    title: "",
-    description:
-      "",
-    tags: [""],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "",
-    description:
-      "",
-    tags: [""],
-    imageUrl: wordanalyticsImg,
-  },
-] as const;
 

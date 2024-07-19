@@ -6,10 +6,12 @@ import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useTranslations } from "next-intl";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
+  const t = useTranslations();
 
   return (
     <header className="z-[999] relative">
@@ -42,8 +44,7 @@ export default function Header() {
                   setTimeOfLastClick(Date.now());
                 }}
               >
-                {link.name}
-
+                {t(link.name)} {/* Fetch the translated text */}
                 {link.name === activeSection && (
                   <motion.span
                     className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"

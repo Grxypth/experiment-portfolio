@@ -10,10 +10,10 @@ import Css from "@/public/skills/css.png";
 import Javascript from "@/public/skills/javascript.png";
 import ReactImg from "@/public/skills/react.png";
 import Tailwind from "@/public/skills/tailwind.png";
-import Github from "@/public/skills/github1.png";
-import Firebase from "@/public/skills/firebase.png";
+import Git from "@/public/skills/git.png";
+import Golang from "@/public/skills/go.png";
 import NextJS from "@/public/skills/nextjs.png";
-import AWS from "@/public/skills/aws.png";
+import Vercel from "@/public/skills/vercel.png";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -42,6 +42,56 @@ export default function Skills() {
         <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
           <div className="grid grid-cols-2 gap-4 justify-center items-center">
             <div className="m-auto">
+              <Image src={ReactImg} width={64} height={64} alt="React" />
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <h3>React</h3>
+            </div>
+          </div>
+        </div>
+        <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="grid grid-cols-2 gap-4 justify-center items-center">
+            <div className="m-auto">
+              <Image src={Git} width={64} height={64} alt="Git" />
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <h3>Git</h3>
+            </div>
+          </div>
+        </div>
+        <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="grid grid-cols-2 gap-4 justify-center items-center">
+            <div className="m-auto">
+              <Image src={Javascript} width={64} height={64} alt="JavaScript" />
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <h3>JavaScript</h3>
+            </div>
+          </div>
+        </div>
+        <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="grid grid-cols-2 gap-4 justify-center items-center">
+            <div className="m-auto">
+              <Image src={Golang} width={64} height={64} alt="Golang" />
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <h3>Golang</h3>
+            </div>
+          </div>
+        </div>
+        <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="grid grid-cols-2 gap-4 justify-center items-center">
+            <div className="m-auto">
+              <Image src={Tailwind} width={64} height={64} alt="Tailwind" />
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <h3>Tailwind</h3>
+            </div>
+          </div>
+        </div>
+        <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="grid grid-cols-2 gap-4 justify-center items-center">
+            <div className="m-auto">
               <Image src={Html} width={64} height={64} alt="HTML" />
             </div>
             <div className="flex flex-col items-center justify-center">
@@ -62,56 +112,6 @@ export default function Skills() {
         <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
           <div className="grid grid-cols-2 gap-4 justify-center items-center">
             <div className="m-auto">
-              <Image src={Javascript} width={64} height={64} alt="JavaScript" />
-            </div>
-            <div className="flex flex-col items-center justify-center">
-              <h3>JavaScript</h3>
-            </div>
-          </div>
-        </div>
-        <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-          <div className="grid grid-cols-2 gap-4 justify-center items-center">
-            <div className="m-auto">
-              <Image src={ReactImg} width={64} height={64} alt="React" />
-            </div>
-            <div className="flex flex-col items-center justify-center">
-              <h3>React</h3>
-            </div>
-          </div>
-        </div>
-        <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-          <div className="grid grid-cols-2 gap-4 justify-center items-center">
-            <div className="m-auto">
-              <Image src={Tailwind} width={64} height={64} alt="Tailwind" />
-            </div>
-            <div className="flex flex-col items-center justify-center">
-              <h3>Tailwind</h3>
-            </div>
-          </div>
-        </div>
-        <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-          <div className="grid grid-cols-2 gap-4 justify-center items-center">
-            <div className="m-auto">
-              <Image src={Firebase} width={64} height={64} alt="Firebase" />
-            </div>
-            <div className="flex flex-col items-center justify-center">
-              <h3>Firebase</h3>
-            </div>
-          </div>
-        </div>
-        <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-          <div className="grid grid-cols-2 gap-4 justify-center items-center">
-            <div className="m-auto">
-              <Image src={Github} width={64} height={64} alt="Github" />
-            </div>
-            <div className="flex flex-col items-center justify-center">
-              <h3>Github</h3>
-            </div>
-          </div>
-        </div>
-        <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-          <div className="grid grid-cols-2 gap-4 justify-center items-center">
-            <div className="m-auto">
               <Image src={NextJS} width={64} height={64} alt="Next.js" />
             </div>
             <div className="flex flex-col items-center justify-center">
@@ -122,10 +122,10 @@ export default function Skills() {
         <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
           <div className="grid grid-cols-2 gap-4 justify-center items-center">
             <div className="m-auto">
-              <Image src={AWS} width={64} height={64} alt="AWS" />
+              <Image src={Vercel} width={64} height={64} alt="Vercel" />
             </div>
             <div className="flex flex-col items-center justify-center">
-              <h3>AWS</h3>
+              <h3>Vercel</h3>
             </div>
           </div>
         </div>

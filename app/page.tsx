@@ -2,7 +2,7 @@ import Intro from "@/components/intro";
 import About from "@/components/about";
 import Skills from "@/components/skills";
 //import Skills from "@/components/skills2";
-import Projects from "@/components/projects";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
       <Intro />
       <About />
       <Skills />
+      <Contact />
     </main>
   );
 }

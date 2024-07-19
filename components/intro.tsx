@@ -23,7 +23,7 @@ export default function Intro() {
       >
         <div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold py-4 text-gray-700">
-            Hi, I'm <span className="text-[#5651e5]">İhsan</span>
+            Hi, I'm <span className="text-[#ff9e2f]">İhsan</span>
           </h1>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold py-2 text-gray-700">
             A Full-Stack Software Engineer

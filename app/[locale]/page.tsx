@@ -2,6 +2,7 @@ import Intro from "@/components/intro";
 import About from "@/components/about";
 import Skills from "@/components/skills";
 import Contact from "@/components/contact";
+import LanguageSwitcher from "@/components/languageswitch";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
@@ -15,6 +16,7 @@ export default async function Home() {
         <About />
         <Skills />
         <Contact />
+        <LanguageSwitcher />
       </NextIntlClientProvider>
     </main>
   );

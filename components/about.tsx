@@ -26,9 +26,7 @@ export default function About() {
           {t("passion")} <span className="font-medium">{t("certificate")}</span>
           <span className="italic">{t("programming")}</span> {t("enjoy")}
           <span className="underline">{t("love")}</span> {t("wlove")}{" "}
-          <span className="font-medium">
-            React, Next.js, Golang, and SQLite.
-          </span>
+          <span className="font-medium">{t("techstack")}</span>
           {t("looking")} <span className="font-medium">{t("position")}</span>
         </p>
 

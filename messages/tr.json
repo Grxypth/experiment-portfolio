@@ -16,7 +16,7 @@
   "passion":" Yazılım Geliştirmek küçüklüğümden beri ilgi duyduğum bir alandı ve üniversitenin son senesinde teknik seçimlik derslerimi de buna göre seçtim.",
   "certificate":"Aynı zamanda Full Stack Open sertifikamı tamamlamak üzerinde çalışıyorum.",
   "programming":"Yazılım yazmanın en sevdiğim iki yönü",
-  "enjoy":"ise sermaye/hammadde ücreti olmadan ortaya ürünler ortaya koyabiliyor olmamız. Sizi kısıtlayabilicek sadece zaman ve hayal gücünüz. ",
+  "enjoy":"ise sermaye/hammadde ücreti olmadan ortaya ürünler ortaya koyabiliyor olmamız. Sizi kısıtlayabilicek şeyler sadece zaman ve hayal gücünüz. ",
   "love":"Bir ürün üzerinde çalışıp o ürünü sonra hayata geçirmek ve çalıştığını görmenin verdiği his de aynı şekilde beni daha iyi bir Yazılım Mühendisi olmaya iten şeyler arasında.",
   "wlove":"Hakim olduğum temel teknolojiler ise",
   "looking":"  Ayrıyeten TypeScript ve C++ teknolojilerinde de tecrübe sahibiyim. Her zaman yeni teknolojiler öğrenmeye açığım. Şu anda tam zamanlı bir",
@@ -27,6 +27,7 @@
   "contactMe":"Benimle direkt",
   "email":"tezravasen@gmail.com ",
   "form":"adresinden veya bu form aracılığı ile iletişime geçebilirsiniz.",
+  "techstack": "React, Next.js, Golang, ve SQLite.",
   "mailPlaceholder":"Email adresiniz",
   "messagePlaceholder":"Mesajınız"
 }

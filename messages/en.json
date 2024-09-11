@@ -27,6 +27,7 @@
   "contactMe":"You can directly contact me at",
   "email":"tezravasen@gmail.com",
   "form":"or through this form.",
+  "techstack": "React, Next.js, Golang, and SQLite.",
   "mailPlaceholder":"Your Email",
   "messagePlaceholder":"Your Message"
   }

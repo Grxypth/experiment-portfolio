@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@portabletext/react": "^3.1.0",
+    "@radix-ui/react-slot": "^1.1.0",
     "@react-email/components": "^0.0.21",
     "@react-email/tailwind": "^0.0.18",
     "@sanity/image-url": "^1.0.2",
@@ -29,6 +31,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

@@ -44,7 +44,7 @@ export default function Header() {
                   setTimeOfLastClick(Date.now());
                 }}
               >
-                {t(link.name)} {/* Fetch the translated text */}
+                {link.name === "blogLink" ? "Blog" : t(link.name)} {/* Handle blog link separately */}
                 {link.name === activeSection && (
                   <motion.span
                     className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"

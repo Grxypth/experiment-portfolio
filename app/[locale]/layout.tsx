@@ -1,5 +1,5 @@
 import Header from "@/components/header";
-import "./globals.css";
+import "../globals.css";
 import { Raleway } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import { Toaster } from "react-hot-toast";

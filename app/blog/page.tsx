@@ -1,41 +1,37 @@
 import { sanityClient } from '../lib/sanity';
 import Link from 'next/link';
+import simpleBlogCard from '../lib/interface';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from './card';
 
-interface BlogPost {
-  title: string;
-  smallDescription: string;
-  currentSlug: string;
-}
-
-async function getData(): Promise<BlogPost[]> {
+async function getData(): Promise<simpleBlogCard[]> {
   const query = `*[_type=='blog'] | order(_createdAt desc) {
     title,
     smallDescription,
     "currentSlug": slug.current
+    titleImage
   }`;
-  const data: BlogPost[] = await sanityClient.fetch(query);
+  //const data: BlogPost[] = await sanityClient.fetch(query);
+  const data = await sanityClient.fetch(query);
   return data;
 }
 
 export default async function Blog() {
-  const data = await getData();
-
-  console.log(data); // Log the fetched data
-
+  const data: simpleBlogCard[] = await getData();
   return (
-    <div>
-      <h1>Blog</h1>
-      <div className="blog-posts">
-        {data.map((post) => (
-          <div key={post.currentSlug} className="blog-post">
-            <h2>{post.title}</h2>
-            <p>{post.smallDescription}</p>
-            <Link href={`/blog/${post.currentSlug}`} className="text-blue-600 hover:underline">
-              Read more
-            </Link>
-          </div>
-        ))}
-      </div>
+    <div className="grid grid-cols-1 lg:grid-cols-4 mt-5">
+      {data.map((post,idx)=>(
+<Card key={idx}>
+
+</Card>
+      ))}
+      
     </div>
   );
 }

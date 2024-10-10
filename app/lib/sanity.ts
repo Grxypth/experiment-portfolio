@@ -1,5 +1,6 @@
 import { create } from "domain"
 import {createClient} from "next-sanity"
+import imageUrlBuilder from'@sanity/image-url'
 
 
 export const sanityClient =createClient({
@@ -8,3 +9,4 @@ export const sanityClient =createClient({
     projectId:'pnohc8sb',
     useCdn:false
 })
+const builder = imageUrlBuilder(sanityClient)

@@ -1,5 +1,7 @@
 import "./blogpage.css";
 import BlogNavbar from "./components/BlogNavbar";
+import BlogFooter from "./components/BlogFooter";
+
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,7 +19,8 @@ export default function RootLayout({
     <html lang="en">
   <body className={inter.className}>
           <BlogNavbar />
-          <main className="max-w-2xl mx-auto px-4">{children}</main>
+          <main className="max-w-3xl mx-auto px-4">{children}</main>
+          <BlogFooter />
       </body>    
       </html>
   )

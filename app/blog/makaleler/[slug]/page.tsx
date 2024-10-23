@@ -22,7 +22,7 @@ async function getData(slug: string) {
 async function BlogArticle({ params }: { params: { slug: string } }) {
   const data: fullBlog = await getData(params.slug);
   return (
-    <div className="mt-8 ">
+    <div className="mt-8">
       <h1>
         <span className="block text-base text-center text-primary font-semibold tracking-wide uppercase">
         <Link href={`/blog/`}>
@@ -33,15 +33,17 @@ async function BlogArticle({ params }: { params: { slug: string } }) {
           {data.title}
         </span>
       </h1>
-      <Image
-        src={urlFor(data.titleImage).url()}
-        width={600}
-        height={150}
-        alt="Title Image"
-        priority
-        className="rounded-lg mt-8 border"
-      />
-      <div className="mt-16 prose prose-blue prose-xl dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
+     <div className="flex justify-center mt-8">
+        <Image
+          src={urlFor(data.titleImage).url()}
+          width={600}
+          height={150}
+          alt="Title Image"
+          priority
+          className="rounded-lg border"
+        />
+      </div>
+      <div className="mt-16 pb-20 prose prose-blue prose-xl dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
         <PortableText value={data.content} />
       </div>
     </div>

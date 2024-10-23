@@ -3,6 +3,7 @@ import { sanityClient, urlFor } from "@/app/lib/sanity";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import Link from "next/link";
+import ptComponents from "../../components/PostBody";
 
 
 export const revalidate = 30;
@@ -44,7 +45,7 @@ async function BlogArticle({ params }: { params: { slug: string } }) {
         />
       </div>
       <div className="mt-16 pb-20 prose prose-blue prose-xl dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
-        <PortableText value={data.content} />
+        <PortableText value={data.content}  components={ptComponents}/>
       </div>
     </div>
   );

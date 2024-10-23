@@ -1,4 +1,5 @@
 import {defineField, defineType} from 'sanity'
+import {defineArrayMember } from 'sanity'
 
 export const blogType = defineType({
   name: 'blog',
@@ -32,7 +33,11 @@ export const blogType = defineType({
       name: 'content',
       type: 'array',
       title: 'Content',
-      of: [{type: 'block'}],
+      of: [{type: 'block'},
+        defineArrayMember({
+          type: 'code',
+        }),
+      ],
     }),
 ],
 })

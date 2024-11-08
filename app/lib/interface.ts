@@ -10,4 +10,5 @@ export interface fullBlog {
     title: string;
     content: any;
     titleImage: { asset: { url: string } };
+    headings?: Array<HTMLHeadElement | string>;
   }

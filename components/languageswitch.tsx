@@ -19,7 +19,7 @@ export default function LocalSwitcher() {
   const isCurrentLocale = (locale: string) => currentLocale === locale;
 
   return (
-    <div className="fixed top-4 right-4 z-50 flex items-center space-x-2 p-1 bg-white border border-gray-300 rounded-md shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <div className=" space-x-3 p-1 bg-white border border-gray-300 rounded-md shadow-sm dark:bg-gray-800 dark:border-gray-700">
       <button
         onClick={() => handleLocaleChange("tr")}
         disabled={isPending}

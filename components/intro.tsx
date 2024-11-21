@@ -3,8 +3,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import LanguageSwitcher from "@/components/languageswitch";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
+import { IoLanguageOutline } from "react-icons/io5";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
@@ -34,7 +36,7 @@ export default function Intro() {
         </div>
 
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium mt-6" // added mt-6 for margin-top
+          className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium mt-6"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -77,6 +79,17 @@ export default function Intro() {
           >
             <FaGithubSquare />
           </a>
+        </motion.div>
+
+        <motion.div
+          className="mt-3 flex justify-center"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.2,
+          }}
+        >
+          <LanguageSwitcher />
         </motion.div>
       </motion.div>
     </div>

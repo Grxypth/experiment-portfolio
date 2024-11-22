@@ -14,7 +14,7 @@ async function getData(slug: string) {
     "currentSlug": slug.current,
       title, 
       content,
-      "headings": content[style in ["h2", "h3", "h4", "h5", "h6"]],
+      "headings": content[style in ["h2", "h3"]],
       titleImage
   } [0]`;
 
